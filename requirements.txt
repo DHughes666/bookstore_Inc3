@@ -7,3 +7,5 @@ environs[django]
 mailchimp_transactional
 tzdata==2023.3
 pillow==9.0.1
+whitenoise==6.1.0
+gunicorn==20.1.0

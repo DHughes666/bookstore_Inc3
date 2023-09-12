@@ -3,7 +3,8 @@ version: "3.9"
 services:
     web:
       build: .
-      command: python /bookstore_Inc2/manage.py runserver 0.0.0.0:8000
+      # command: python /bookstore_Inc2/manage.py runserver 0.0.0.0:8000
+      command: gunicorn bookstoreProject.wsgi -b 0.0.0.0:8000
       volumes:
         - .:/bookstore_Inc2
       ports:
